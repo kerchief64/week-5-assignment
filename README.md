@@ -6,6 +6,7 @@
 +layout pages generally are used to hold global menus and dashboards that will always be wrapped around the +page content. In this example we have **root page** and **profile page** wrapped in a dashboard menu located in +layout. Your job is to make the +layout functional by breaking the page into small, easy to use parts.
 
 **You can find a working example here: https://profound-belekoy-e96398.netlify.app/**
+
 **You can find the code for that example here: https://github.com/HyperAlch/week-5-assignment-done**
 
 The goal is to have your code match the example code, ***but do NOT copy any files or code from the example repository directly. It is important that you learn to do this on your own. Create the files your self and type or transfer the code in your own project.***
