@@ -1,4 +1,13 @@
+<script>
+	import { mobileMenuActive } from "../../layout-stores";
+
+	function toggleMobileMenu() {
+    mobileMenuActive.update(n => !n)
+  }
+</script>
+
 <button
+	on:click={toggleMobileMenu}
 	type="button"
 	class="border-r border-gray-200 px-4 text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500 lg:hidden"
 >

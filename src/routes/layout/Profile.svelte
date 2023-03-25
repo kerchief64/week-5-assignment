@@ -79,7 +79,7 @@
 </div>
 
 <style>
-	.hide {
+	.hidden {
 		display: none;
 	}
 </style>
