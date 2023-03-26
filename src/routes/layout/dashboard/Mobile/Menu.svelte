@@ -9,17 +9,6 @@
 	const unsubscribe = mobileMenuActive.subscribe((value) => {
 		isMenuActive = value;
 	});
-
-	function goTo(url) {
-		window.location = url;
-	}
-
-	function closeMobileMenu(url) {
-		setTimeout(() => {
-			mobileMenuActive.update((n) => false);
-			goTo(url);
-		}, 200);
-	}
 </script>
 
 <div class="relative z-40 md:hidden" class:hidden={!isMenuActive} role="dialog" aria-modal="true">
@@ -41,9 +30,7 @@
 					{#each dashboardItemList as item (item.id)}
 						<a
 							href={item.href}
-							on:click={(e) => {
-								closeMobileMenu(item.href);
-							}}
+							on:click={() => mobileMenuActive.update((n) => false)}
 							class="text-gray-300 hover:bg-gray-700 hover:text-white group flex items-center px-2 py-2 text-sm font-medium rounded-md"
 						>
 							<Icons name={item.name} />
