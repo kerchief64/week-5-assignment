@@ -1,14 +1,14 @@
 <script>
-  import { mobileMenuActive } from "../../layout-stores";
+	import { mobileMenuActive } from '../../layout-stores';
 
-  function closeMobileMenu() {
-    mobileMenuActive.update(n => false)
-  }
+	function closeMobileMenu() {
+		mobileMenuActive.update((n) => false);
+	}
 </script>
 
 <div class="absolute top-0 right-0 -mr-12 pt-2">
 	<button
-    on:click={closeMobileMenu}
+		on:click={closeMobileMenu}
 		type="button"
 		class="ml-1 flex h-10 w-10 items-center justify-center rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
 	>
